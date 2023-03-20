@@ -16,13 +16,7 @@
 			:disabled="iterating",
 			title="generation mode"
 		)
-		label(for="classicGen") {{ classicMode ? 'classic' : 'weird' }}
-		input#coloredBlocks(
-			type="checkbox",
-			v-model="coloredBlocks",
-			:disabled="iterating",
-			title="generation mode"
-		)
+	
 		label(for="coloredBlocks") {{ coloredBlocks ? 'colors' : 'no colors' }}
 	#grid(
 		:style="{ '--width': width, '--height': height, '--baseColor': baseColor }",
