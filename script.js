@@ -9,14 +9,7 @@
 			:disabled="iterating",
 			title="generation mode"
 		)
-		label(for="caveMode") {{ caveMode ? 'caves' : 'islands' }}
-		input#classicGen(
-			type="checkbox",
-			v-model="classicMode",
-			:disabled="iterating",
-			title="generation mode"
-		)
-	
+		
 		label(for="coloredBlocks") {{ coloredBlocks ? 'colors' : 'no colors' }}
 	#grid(
 		:style="{ '--width': width, '--height': height, '--baseColor': baseColor }",
